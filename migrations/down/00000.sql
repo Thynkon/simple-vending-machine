@@ -1,0 +1,2 @@
+TRUNCATE `article`;
+TRUNCATE `sale`;

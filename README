@@ -1,0 +1,17 @@
+Before you start using this program, make sure you follow the steps bellow:
+
+// Create database
+CREATE DATABASE cpnv;
+
+// Load timezones table
+mysql_tzinfo_to_sql /usr/share/zoneinfo | mysql -u root -p mysql
+
+// Enable mysqli and pdo (for migrations) in /etc/php/php.ini
+extension=mysqli
+extension=extension=pdo_mysql
+
+// Install dependencies
+composer install
+
+// Run unit tests
+./vendor/bin/phpunit
